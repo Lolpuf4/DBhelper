@@ -1,7 +1,7 @@
 import socket
 from protocol.protocol import*
 from errors import*
-HOST = "127.0.0.1"
+HOST = "62.60.178.229"
 PORT = 10002
 
 def execute_command(command, user, password, database = ""):
@@ -50,7 +50,7 @@ def execute_command(command, user, password, database = ""):
 #print(execute_command("SELECT users.username, messages.text FROM message_history JOIN users ON message_history.senderID = users.id JOIN messages ON message_history.msgID = messages.id WHERE users.id < 2;", "admin", "123", "messenger"))
 #print(execute_command("SELECT username FROM users WHERE username = ilia;", "admin", "123", "messenger"))
 #print(execute_command("SELECT employees.id, employees.name, departments.department_name FROM employees JOIN departments ON employees.department_id = departments.id;", "admin", "123", "messenger"))
-print(execute_command("SELECT username FROM users;", "admin", "123", "messenger"))
+#print(execute_command("SELECT username, password FROM users;", "admin", "123", "messenger"))
 
 
 
