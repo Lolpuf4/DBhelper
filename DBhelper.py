@@ -1,6 +1,6 @@
 import socket
-from protocol.protocol import*
-from errors import*
+from .protocol.protocol import*
+from .errors import*
 HOST = "62.60.178.229"
 PORT = 10003
 
