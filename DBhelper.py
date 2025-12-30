@@ -2,7 +2,7 @@ import socket
 from protocol.protocol import*
 from errors import*
 HOST = "62.60.178.229"
-PORT = 10002
+PORT = 10003
 
 def execute_command(command, user, password, database = ""):
     socket_test_client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
