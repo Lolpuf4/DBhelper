@@ -1,7 +1,9 @@
 import socket
-from .protocol.protocol import*
-from .errors import*
-HOST = "62.60.178.229"
+from protocol.protocol import*
+from errors import*
+import sys
+
+HOST = "62.60.178.229" if len(sys.argv) > 1 else "127.0.0.1"
 PORT = 10011
 
 def execute_command(command, user, password, database = ""):
