@@ -1,6 +1,6 @@
 import socket
-from protocol.protocol import*
-from errors import*
+from .protocol.protocol import*
+from .errors import*
 import sys
 
 HOST = "62.60.178.229" if len(sys.argv) > 1 else "127.0.0.1"
